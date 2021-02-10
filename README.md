@@ -13,6 +13,6 @@
 
 ### References
 
-The main reference for studing is this DS and Algo [Book](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275).
+[1] The main reference for studing is this DS and Algo [Book](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275).
 
-This [repo](https://github.com/jwasham/coding-interview-university#dynamic-programming) has alot of usefull materials.
+[2] This [repo](https://github.com/jwasham/coding-interview-university#dynamic-programming) has alot of usefull materials.
