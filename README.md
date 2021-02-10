@@ -4,7 +4,7 @@ Main reference for studing is this DS and Algo [Book](https://www.amazon.com/Str
 
 ## Table of Contents
 
-- [Chapter2:Object Oriented Programming](#Chapter2:Object-Oriented-Programming2)
+- [Chapter2 : Object Oriented Programming](#Chapter2-:-Object-Oriented-Programming)
 
 
-## Chapter2:Object Oriented Programming
+## Chapter2 : Object Oriented Programming
