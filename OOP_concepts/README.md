@@ -123,4 +123,12 @@ if __name__ == "__main__" :
 - In Python, every piece of data is represented as an instance of some class. 
 - A class provides a set of behaviors in the form of member functions (also known as methods).
 - A class also serves as a blueprint for its instances, effectively determining the way that state information for each instance is represented in the form of attributes (also known as fields, instance variables, or data members).
-- 
+
+###  Operator Overloading and Python’s Special Methods
+- We know that each element in python is instance(Object/Container) of class for examble ```x = 5``` is integer as pyrhon is a dynamic typing language so you don't need to make a decleration. 
+- You can see that 
+```
+x = 5 
+#is like 
+x = int(5) #create instance from int class
+``` 
