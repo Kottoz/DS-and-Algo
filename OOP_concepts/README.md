@@ -107,10 +107,10 @@ that is concise, correct, and reusable.
 - class that does not depend upon any other classes can be tested before another class that depends on the former. this is called **Unit Test**, functionality of a specific component is tested in isolation of the larger software project.
 - Python provides several forms of support for automated testing. When functions or classes are defined in a module, testing for that module can be embedded
 in the same file. 
-
-    ```
-    if name == __main__ :
-    # perform tests...
-    ```
+```
+if __name__ == __main__ :
+# perform tests...
+```
+- will be executed when Python is invoked directly on that module, but not when the module is imported for use in a larger software project. It is common to put tests in such a construct to test the functionality of the functions and classes specifically defined in that module.
 
 
