@@ -88,3 +88,29 @@ that is concise, correct, and reusable.
         - These behaviors will define the methods that this class performs, and the set of behaviors for a class are the interface to the class, as these form the means for other pieces of code to interact with objects from the class.
 
 - We can use UML to design our project like the following ![Credit Card UML Diagram](DS-and-Algo/OOP_concepts/imges/CreditCardUMLDiagram.png) 
+
+## Testing and Debugging
+- Verifying the correctness of a program over all possible inputs is usually infeasible, we should aim at executing the program on a representative subset of inputs.
+-  At the very minimum, we should make sure that every method of a class is tested at least once.
+- Programs often tend to fail on special cases of the input.
+- For example, when testing a method that sorts (that is, puts in order) a sequence of integers, we should consider the following inputs:
+    - The sequence has zero length (no elements).
+    - The sequence has one element.
+    - All the elements of the sequence are the same.
+    - The sequence is already sorted.
+    - The sequence is reverse sorted.
+- It is also advantageous torun the program on a large collection of randomly generated inputs.
+- The dependencies among the classes and functions of a program induce a hierarchy. if we have Class A which is dependant on Class A and we need to test functionality of class A how do we do that?, there are two common stratigies Bottom-Up and top-Down.
+    - Top-Down is called stubbing, a boot-strapping technique that replaces a lower-level component with a stub, a replacement for the component that simulates the functionality of the original. For example, if function A calls function B to get the first line of a file, when testing A we can replace B with a stub that returns a fixed string.
+    - Bottom-up testing proceeds from lower-level components to higher-level components. For example, bottom-level functions, which do not invoke other functions, are tested first, followed by functions that call only bottom-level functions, and so on. 
+    - 
+- class that does not depend upon any other classes can be tested before another class that depends on the former. this is called **Unit Test**, functionality of a specific component is tested in isolation of the larger software project.
+- Python provides several forms of support for automated testing. When functions or classes are defined in a module, testing for that module can be embedded
+in the same file. 
+
+    ```
+    if name == __main__ :
+    # perform tests...
+    ```
+
+
