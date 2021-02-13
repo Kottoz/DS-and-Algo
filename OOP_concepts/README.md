@@ -48,23 +48,23 @@ before they are integrated into a larger software system.
 - Computing researchers and practitioners have developed a variety of organizational concepts and methodologies for designing quality object-oriented software
 that is concise, correct, and reusable.
 - design patterns fall into two groups—patterns for solving algorithm design problems and patterns for solving software engineering problems. 
-The algorithm design patterns we discuss include the following:
-    • Recursion (Chapter 4)
-    • Amortization (Sections 5.3 and 11.4)
-    • Divide-and-conquer (Section 12.2.1)
-    • Prune-and-search, also known as decrease-and-conquer (Section 12.7.1)
-    • Brute force (Section 13.2.1)
-    • Dynamic programming (Section 13.3).
-    • The greedy method (Sections 13.4.2, 14.6.2, and 14.7)
+- The algorithm design patterns we discuss include the following:
+    - Recursion (Chapter 4).
+    - Amortization (Sections 5.3 and 11.4)
+    - Divide-and-conquer (Section 12.2.1)
+    - Prune-and-search, also known as decrease-and-conquer (Section 12.7.1)
+    - Brute force (Section 13.2.1)
+    - Dynamic programming (Section 13.3).
+    - The greedy method (Sections 13.4.2, 14.6.2, and 14.7)
 
 - Likewise, the software engineering design patterns we discuss include:
-    • Iterator (Sections 1.8 and 2.3.4)
-    • Adapter (Section 6.1.2)
-    • Position (Sections 7.4 and 8.1.2)
-    • Composition (Sections 7.6.1, 9.2.1, and 10.1.4)
-    • Template method (Sections 2.4.3, 8.4.6, 10.1.3, 10.5.2, and 11.2.1)
-    • Locator (Section 9.5.1)
-    • Factory method (Section 11.2.1)
+    - Iterator (Sections 1.8 and 2.3.4)
+    - Adapter (Section 6.1.2)
+    - Position (Sections 7.4 and 8.1.2)
+    - Composition (Sections 7.6.1, 9.2.1, and 10.1.4)
+    - Template method (Sections 2.4.3, 8.4.6, 10.1.3, 10.5.2, and 11.2.1)
+    - Locator (Section 9.5.1)
+    - Factory method (Section 11.2.1)
  
 
 
