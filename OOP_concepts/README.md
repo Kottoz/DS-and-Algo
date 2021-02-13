@@ -127,7 +127,7 @@ if __name__ == "__main__" :
 ###  Operator Overloading and Python’s Special Methods
 - We know that each element in python is instance(Object/Container) of class for examble ```x = 5``` is integer as pyrhon is a dynamic typing language so you don't need to make a decleration. 
 - You can see that 
-```
+```python
 x = 5 
 #is like 
 x = int(5) #create instance from int class
