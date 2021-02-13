@@ -87,4 +87,4 @@ that is concise, correct, and reusable.
         - Define the behaviors for each class carefully and precisely, so that the consequences of each action performed by a class will be well understood by other classes that interact with it. 
         - These behaviors will define the methods that this class performs, and the set of behaviors for a class are the interface to the class, as these form the means for other pieces of code to interact with objects from the class.
 
-- We can use UML to design our project like the following ![CreditCardUMLDiagram](\imges\CreditCardUMLDiagram.png)
+- We can use UML to design our project like the following ![CreditCardUMLDiagram](/imges/CreditCardUMLDiagram.png)
