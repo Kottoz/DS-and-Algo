@@ -1,4 +1,3 @@
-@Kottoz
 # Object Oriented Programming Goals, Principles, and patterns
 
 ## Object Oriented Programming Goals
@@ -68,9 +67,24 @@ that is concise, correct, and reusable.
  
 
 
-## Class Definition 
+# SoftWare Development
+- Traditional software development involves several phases. Three major steps are:
+    1. [Design](#design)
+    2. [Implementation](#mplementation)
+    3. [Testing and Debugging](#testing-and-debugging)
 
+## Design
+- In the design step that we decide how to divide the workings of our program into classes, we decide how these classes will interact, what data each will store, and what actions each will perform.
+- Indeed, one of the main challenges that beginning programmers face is deciding what classes to define to do the work of their program. While general prescriptions are hard to come by, there are some rules of thumb that we can apply when determining how to design our classes:
+    1. **Responsibilities**: 
+        - Divide the work into different actors, each with a different responsibility.
+        - Try to describe responsibilities using action verbs.
+    2. **Independence**: 
+        - Define the work for each class to be as independent from other classes as possible. 
+        - Subdivide responsibilities between classes so that each class has autonomy over some aspect of the program. 
+        - Give data (as instance variables) to the class that has jurisdiction over the actions that require access to this data.
+    3. **Behaviors**: 
+        - Define the behaviors for each class carefully and precisely, so that the consequences of each action performed by a class will be well understood by other classes that interact with it. 
+        - These behaviors will define the methods that this class performs, and the set of behaviors for a class are the interface to the class, as these form the means for other pieces of code to interact with objects from the class.
 
-
-## Class Definition 
-    - In Python, every piece of data is represented as an instance of some class
+- We can use UML to design our project like the following ![CreditCardUMLDiagram](OOP_concepts\imges\CreditCardUMLDiagram.png)
