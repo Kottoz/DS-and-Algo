@@ -1,4 +1,4 @@
-### Object Oriented Programming Goals
+## Object Oriented Programming Goals
 
 - The main actor of in OOP is **Object** which is an istance of a **Class**.
 
@@ -14,15 +14,15 @@
     - **Reusability**: the same code should be usable as a component of different systems in various applications.
 
 
-### Object Oriented Programming Design Principles 
+## Object Oriented Programming Design Principles 
 
 
-### Class Definition 
+## Class Definition 
 
 
-### Class Definition 
+## Class Definition 
 
 
 
-### Class Definition 
+## Class Definition 
     - In Python, every piece of data is represented as an instance of some class
