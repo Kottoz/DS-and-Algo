@@ -125,6 +125,13 @@ if __name__ == "__main__" :
 - A class also serves as a blueprint for its instances, effectively determining the way that state information for each instance is represented in the form of attributes (also known as fields, instance variables, or data members).
 
 ###  Operator Overloading and Python’s Special Methods
+- The so-called magic methods have nothing to do with wizardry. You have already seen them in the previous chapters of our tutorial. They are special methods with fixed names. They are the methods with this clumsy syntax, i.e. the double underscores at the beginning and the end. They are also hard to talk about. How do you pronounce or say a method name like __init__? "Underscore underscore init underscore underscore" sounds horrible and is almost a tongue twister. "Double underscore init double underscore" is a lot better, but the ideal way is "dunder init dunder" That's why magic methods methods are sometimes called dunder methods!
+
+So what's magic about the __init__ method? The answer is, you don't have to invoke it directly. The invocation is realized behind the scenes. When you create an instance x of a class A with the statement "x = A()", Python will do the necessary calls to __new__ and __init__.
+
+Towards the end of this chapter of our tutorial we will introduce the __call__ method. It is overlooked by many beginners and even advanced programmers of Python. It is a functionality which many programming languages do not have, so programmers generally do not look for it. The __call__ method enables Python programmers to write classes where the instances behave like functions. Both functions and the instances of such classes are called callables.
+
+We have encountered the concept of operator overloading many times in the course of this tutorial. We had used the plus sign to add numerical values, to concatenate strings or to combine lists:
 - We know that each element in python is instance(Object/Container) of class for examble ```x = 5``` is integer as pyrhon is a dynamic typing language so you don't need to make a decleration. 
 - You can see that 
 ```python
@@ -134,8 +141,10 @@ x = int(5) #Initialize an instance from int class with value = 5
 y = int(7) #Initialize an instance from int class with value = 5 
 
 #so if we need to add value of x instance to y we just do 
-
 z = x + y
- 
 >>> 12
 ``` 
+- Python’s built-in classes provide natural semantics for many operators.
+- By default, the + operator is undefined for a new class.
+- However, the author of a class may provide a definition using a technique known as operator overloading.
+- Best resource to learn more about [Operator Overloading](https://www.python-course.eu/python3_magic_methods.php).
