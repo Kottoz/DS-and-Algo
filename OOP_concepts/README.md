@@ -108,9 +108,19 @@ that is concise, correct, and reusable.
 - Python provides several forms of support for automated testing. When functions or classes are defined in a module, testing for that module can be embedded
 in the same file. 
 ```
-if __name__ == __main__ :
+if __name__ == "__main__" :
 # perform tests...
 ```
 - will be executed when Python is invoked directly on that module, but not when the module is imported for use in a larger software project. It is common to put tests in such a construct to test the functionality of the functions and classes specifically defined in that module.
+- More robust support for automation of unit testing is provided by Python’s *unittest* module. 
+- This framework allows the grouping of individual test cases into larger test suites
+
+- The simplest debugging technique consists of using print statements to track the values of variables during the execution of the program.
+- A better approach is to run the program within a debugger.
 
 
+# Class Definition
+- In Python, every piece of data is represented as an instance of some class. 
+- A class provides a set of behaviors in the form of member functions (also known as methods).
+- A class also serves as a blueprint for its instances, effectively determining the way that state information for each instance is represented in the form of attributes (also known as fields, instance variables, or data members).
+- 
