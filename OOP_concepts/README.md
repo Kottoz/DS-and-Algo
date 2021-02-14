@@ -125,15 +125,15 @@ if __name__ == "__main__" :
 - A class also serves as a blueprint for its instances, effectively determining the way that state information for each instance is represented in the form of attributes (also known as fields, instance variables, or data members).
 
 ###  Operator Overloading and Python’s Special Methods
-The so-called magic methods have nothing to do with wizardry. You have already seen them in the previous chapters of our tutorial. They are special methods with fixed names. They are the methods with this clumsy syntax, i.e. the double underscores at the beginning and the end. They are also hard to talk about. How do you pronounce or say a method name like ```__init__```? "Underscore underscore init underscore underscore" sounds horrible and is almost a tongue twister. "Double underscore init double underscore" is a lot better, but the ideal way is "dunder init dunder" That's why magic methods methods are sometimes called dunder methods!
+- We know that each element in python is instance(Object/Container) of class for examble ```x = 5``` is integer as python is a dynamic typing language so you don't need to make a decleration. 
+- The mechanism works like this: If we have an expression ```"x + y"``` and x is an instance of class ```K```, then Python will check the class definition of ```K```. If ```K``` has a method ```__add__``` it will be called with ```x.__add__(y)```, otherwise we will get an error message:
+```python
+Traceback (most recent call last):
+  File "", line 1, in 
+TypeError: unsupported operand type(s) for +: 'K' and 'K'
+``` 
+- You can see that
 
-So what's magic about the ```__init__``` method? The answer is, you don't have to invoke it directly. The invocation is realized behind the scenes. When you create an instance x of a class A with the statement ```"x = A()"```, Python will do the necessary calls to ```__new__``` and``` __init__```.
-
-Towards the end of this chapter of our tutorial we will introduce the ```__call__``` method. It is overlooked by many beginners and even advanced programmers of Python. It is a functionality which many programming languages do not have, so programmers generally do not look for it. The ```__call__``` method enables Python programmers to write classes where the instances behave like functions. Both functions and the instances of such classes are called callables.
-
-We have encountered the concept of operator overloading many times in the course of this tutorial. We had used the plus sign to add numerical values, to concatenate strings or to combine lists:
-- We know that each element in python is instance(Object/Container) of class for examble ```x = 5``` is integer as pyrhon is a dynamic typing language so you don't need to make a decleration. 
-- You can see that 
 ```python
 x = 5 
 #is like 
@@ -148,3 +148,4 @@ z = x + y
 - By default, the + operator is undefined for a new class.
 - However, the author of a class may provide a definition using a technique known as operator overloading.
 - Best resource to learn more about [Operator Overloading](https://www.python-course.eu/python3_magic_methods.php).
+- see Length class examble.
