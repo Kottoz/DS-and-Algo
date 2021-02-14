@@ -148,4 +148,8 @@ z = x + y
 - By default, the + operator is undefined for a new class.
 - However, the author of a class may provide a definition using a technique known as operator overloading.
 - Best resource to learn more about [Operator Overloading](https://www.python-course.eu/python3_magic_methods.php).
-- see Length class examble.
+- see Length class examble. 
+    - How to use [Class attributes](https://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide#:~:text=A%20Python%20class%20attribute%20is,an%20instance%20of%20a%20class.&text=For%20Java%20or%20C%2B%2B%20programmers,identical%E2%80%94to%20the%20static%20member.)
+
+###  Implied Methods
+
