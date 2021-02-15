@@ -152,4 +152,31 @@ z = x + y
     - How to use [Class attributes](https://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide#:~:text=A%20Python%20class%20attribute%20is,an%20instance%20of%20a%20class.&text=For%20Java%20or%20C%2B%2B%20programmers,identical%E2%80%94to%20the%20static%20member.)
 
 ###  Implied Methods
+- As a general rule, if a particular special method is not implemented in a user-defined class, the standard syntax that relies upon that method will raise an exception. For example, evaluating the expression, a+b, for instances of a user-defined class without add or radd will raise an error.
+- However, there are some operators that have default definitions provided by Python, in the absence of special methods.
+- For example, the bool method, which supports the syntax ```if foo:```  has default semantics so that every object other than ```None``` is evaluated as ```True```
+- Container types, the ```__len__``` method is typically defined to return the size of the container.
 
+
+###  Iterators
+- An iterator for a collection provides one key behavior: It supports a special method named next thatreturns the ```__next__``` element of the collection, if any, or raises a StopIteration exception to indicate that there are no further elements.
+- There are many types of objects in Python that qualify as being iterable. Basic container types, such as list, tuple, and set, qualify as iterable types.
+- A string can produce an iteration of its characters, a dictionary can produce an iteration of its keys, and a file can produce an iteration of its lines. Userdefined types may also support iteration. 
+- An iterator is an object that manages an iteration through a series of values. If variable, ```i```, identifies an iterator object, then each call to the built-in function, ```next(i)```, produces a subsequent element from the underlying series, with a ```StopIteration``` exception raised to indicate that there are no further elements.
+- An iterable is an object, obj, that produces an iterator via the syntax ```iter(obj)```.
+- calling ```iter(data)``` on a list instance produces an instance of the list iterator class. That iterator does not store its own copy of the
+list of elements. Instead, it maintains a current index into the original list, representing the next element to be reported. Therefore, if the contents of the original list are modified after the iterator is constructed, but before the iteration is complete, the iterator will be reporting the updated contents of the list.
+
+### Generators
+- the most convenient technique for creating iterators in Python is through the use of generators. A generator is implemented with a syntax that is very similar to a function, but instead of returning values, a ```yield``` statement is executed to indicate each element of the series. 
+
+
+
+
+
+
+# Inheritance
+- A natural way to organize various structural components of a software package is in a hierarchical fashion, with similar abstract definitions grouped together in a level-by-level manner that goes from specific to more general as one traverses up the hierarchy. 
+- In object-oriented terminology, the existing class is typically described as the base class, parent class, or superclass, while the newly defined class is known as the subclass or child class.
+- There are two ways in which a subclass can differentiate itself from its superclass. A subclass may specialize an existing behavior by providing a new implementation that overrides an existing method. A subclass may also extend its superclass by providing brand new methods.
+- look at predatory creditcard file.
