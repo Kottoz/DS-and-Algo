@@ -180,3 +180,7 @@ list of elements. Instead, it maintains a current index into the original list, 
 - In object-oriented terminology, the existing class is typically described as the base class, parent class, or superclass, while the newly defined class is known as the subclass or child class.
 - There are two ways in which a subclass can differentiate itself from its superclass. A subclass may specialize an existing behavior by providing a new implementation that overrides an existing method. A subclass may also extend its superclass by providing brand new methods.
 - look at predatory creditcard file.
+
+### Abstract Base Classes
+- When defining a group of classes as part of an inheritance hierarchy, one technique for avoiding repetition of code is to design a base class with common functionality that can be inherited by other classes that need it.
+-  The real purpose of the ABC class was to centralize the implementations of behaviors that other classes needed, thereby streamlining the code that is relegated to those subclasses.
