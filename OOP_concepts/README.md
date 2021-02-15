@@ -184,3 +184,6 @@ list of elements. Instead, it maintains a current index into the original list, 
 ### Abstract Base Classes
 - When defining a group of classes as part of an inheritance hierarchy, one technique for avoiding repetition of code is to design a base class with common functionality that can be inherited by other classes that need it.
 -  The real purpose of the ABC class was to centralize the implementations of behaviors that other classes needed, thereby streamlining the code that is relegated to those subclasses.
+- In classic object-oriented terminology, we say a class is an abstract base class if its only purpose is to serve as a base class through inheritance. More formally, an abstract base class is one that cannot be directly instantiated, while a concrete class is one that can be instantiated.
+- Our reason for focusing on abstract base classes in our study of data structures is that Python’s collections module provides several abstract base classes that assist when defining custom data structures that share a common interface with some of Python’s built-in data structures.
+- Look at book sec(2.4.3).
