@@ -24,8 +24,10 @@ class Progression:
     
     def __iter__(self):
         return self
-    
+    #fffff
     def print_regression(self, n):
         print(''.join(str(self.__next__()) for i in range(n)))
+
+
 
 
