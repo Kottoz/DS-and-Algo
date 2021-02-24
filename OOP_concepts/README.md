@@ -70,7 +70,7 @@ that is concise, correct, and reusable.
 # SoftWare Development
 - Traditional software development involves several phases. Three major steps are:
     1. [Design](#design)
-    2. [Implementation](#mplementation)
+    2. [Implementation](#implementation)
     3. [Testing and Debugging](#testing-and-debugging)
 
 ## Design
